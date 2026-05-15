@@ -62,6 +62,19 @@ def signup_for_activity(activity_name: str, email: str):
     # Get the specific activity
     activity = activities[activity_name]
 
+    #Validate email format (simple check)
+    if "@" not in email or "." not in email:
+        raise HTTPException(status_code=400, detail="Invalid email format")     
+
+    # Prevent duplicate signups
+    if email in activity.get("participants", []):
+        raise HTTPException(status_code=400, detail="Student already registered for this activity")
+
+    # Enforce max participants
+    max_participants = activity.get("max_participants")
+    if max_participants is not None and len(activity.get("participants", [])) >= max_participants:
+        raise HTTPException(status_code=400, detail="Activity is full")
+
     # Add student
-    activity["participants"].append(email)
+    activity.setdefault("participants", []).append(email)
     return {"message": f"Signed up {email} for {activity_name}"}
