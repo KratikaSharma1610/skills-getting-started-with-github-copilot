@@ -38,6 +38,42 @@ activities = {
         "schedule": "Mondays, Wednesdays, Fridays, 2:00 PM - 3:00 PM",
         "max_participants": 30,
         "participants": ["john@mergington.edu", "olivia@mergington.edu"]
+    },
+    "Basketball Team": {
+        "description": "Team-based basketball training and friendly games",
+        "schedule": "Tuesdays and Thursdays, 4:00 PM - 5:30 PM",
+        "max_participants": 20,
+        "participants": ["liam@mergington.edu"]
+    },
+    "Soccer Camp": {
+        "description": "Soccer drills, teamwork practice, and weekend matches",
+        "schedule": "Mondays and Wednesdays, 4:00 PM - 5:30 PM",
+        "max_participants": 24,
+        "participants": ["ava@mergington.edu"]
+    },
+    "Art Club": {
+        "description": "Draw, paint, and explore creative art projects together",
+        "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
+        "max_participants": 15,
+        "participants": ["sophia@mergington.edu"]
+    },
+    "Drama Workshop": {
+        "description": "Acting exercises, stagecraft, and short performance practice",
+        "schedule": "Fridays, 3:30 PM - 5:00 PM",
+        "max_participants": 18,
+        "participants": ["mason@mergington.edu"]
+    },
+    "Debate Society": {
+        "description": "Prepare arguments and compete in structured debate rounds",
+        "schedule": "Thursdays, 4:00 PM - 5:30 PM",
+        "max_participants": 16,
+        "participants": ["sophia@mergington.edu"]
+    },
+    "Science Olympiad": {
+        "description": "Build science projects and practice STEM problem solving",
+        "schedule": "Tuesdays, 4:00 PM - 5:30 PM",
+        "max_participants": 20,
+        "participants": ["ethan@mergington.edu"]
     }
 }
 
